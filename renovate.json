@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["cynkra/renovate-config"],
+  "extends": ["pat-s/renovate-config"],
   "dependencyDashboard": true,
   "assignees": ["pat-s"],
   "enabledManagers": ["woodpecker"],
