@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
+  "assignees": ["pat-s"],
+  "semanticCommits": "enabled",
+  "automergeStrategy": "squash",
+  "autodiscover": false,
+  "platformAutomerge": true,
+  //   "username": "renovate-cynkra[bot]",
+  //   "gitAuthor": "Renovate cynkra [bot] <41217779+renovate-cynkra[bot]@users.noreply.github.com>",
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true,
+      "semanticCommits": "enabled"
+    }
+  ]
+}

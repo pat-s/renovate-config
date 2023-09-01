@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["cynkra/renovate-config"],
+  "dependencyDashboard": true,
+  "assignees": ["pat-s"],
+  "enabledManagers": ["woodpecker"],
+  "packageRules": [
+    {
+      "description": "use fix scope for renovate updates",
+      "matchPackageNames": ["renovate/renovate"],
+      "semanticCommitType": "fix"
+    },
+    {
+      "description": "Automerge renovate updates",
+      "matchPackageNames": ["renovate/renovate"],
+      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "automerge": true
+    }
+  ]
+}
